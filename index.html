@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inicio | Minecraft</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⛏️</text></svg>">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body class="portada">
+<main class="hero">
+  <video class="video-fondo" autoplay muted loop playsinline poster="img/fondo.jpg">
+    <source src="video/redvid_io_hey_all_👋🏽_i_made_a_relaxing_live_wallpaper_for_wallpaper_engine.mp4" type="video/mp4">
+  </video>
+  <article class="hero-texto">
+    <h1 class="titulo"><img src="img/logo.png" alt="Minecraft" class="logo-img"></h1>
+    <p class="slogan">"En la inmensidad del mapa, la verdadera distancia nunca se mide en bloques, sino en el alcance de tus ideas"</p>
+    <a href="https://www.minecraft.net/es-es/store/minecraft-deluxe-collection-pc?tabs=%7B%22details%22%3A0%7D" target="_blank" class="btn-comprar">COMPRAR</a>
+    <nav class="menu menu-portada">
+      <a href="index.html" class=""><i class="fa-solid fa-house"></i> Inicio</a> 
+      <a href="blog.html" class=""><i class="fa-solid fa-pencil"></i> Blog</a>
+      <a href="galeria.html" class=""><i class="fa-mosaic fa-solid fa-image"></i> Galeria</a> 
+      <a href="videos.html" class=""><i class="fa-notdog-duo fa-solid fa-video"></i> Videos</a> 
+      <a href="nosotros.html" class=""><i class="fa-solid fa-users"></i> Nosotros</a>
+      <a href="contactos.html" class=""><i class="fa-solid fa-envelope"></i> Contactos</a>
+    </nav>
+    <div class="redes">
+      <a href="https://x.com/Minecraft" target="_blank" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.facebook.com/minecraft?locale=es_LA" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/minecraft/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@minecraft" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
+    <audio id="musica" loop>
+      <source src="audio/C418 - Aria Math (Minecraft Volume Beta).mp3" type="audio/mpeg">
+    </audio>
+  </article>
+  <script>
+  const musica = document.getElementById("musica");
+  musica.volume = 0.5;
+  musica.play();
+   document.addEventListener("click", () => musica.play());
+  document.addEventListener("wheel", () => musica.play());
+</script>
+</main>
+</body>
+</html>
